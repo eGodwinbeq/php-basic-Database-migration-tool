@@ -118,9 +118,11 @@ function migrate($con, $params)
     }
 }
 
-// DEMO USAGE FOR THE migrate() FUNCTION
+## DEMO USAGE FOR THE migrate() FUNCTION
 
-/* --------------------------------------------------------------->
+/* 
+
+
 $params = [
     'table_name' => 'employees',
     'columns' => [
@@ -165,4 +167,4 @@ $params = [
 $result = migrate($con, $params);
 // Output the result of the operation
 echo $result;
-<---------------------------------------------------------------- */
+*/
