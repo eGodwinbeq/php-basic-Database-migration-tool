@@ -22,7 +22,7 @@
  *                     "Done " if alterations are successful, or void if an error occurs.
  *                     Errors are echoed directly to the output.
  */
-function alterMyTable($con, $params)
+function migrate($con, $params)
 {
     $table_name = mysqli_real_escape_string($con, $params['table_name']);
 
@@ -118,7 +118,7 @@ function alterMyTable($con, $params)
     }
 }
 
-// DEMO USAGE FOR THE alterMyTable() FUNCTION
+// DEMO USAGE FOR THE migrate() FUNCTION
 
 /* --------------------------------------------------------------->
 $params = [
@@ -162,7 +162,7 @@ $params = [
 ];
 
 // Call the function to alter the table
-$result = alterMyTable($con, $params);
+$result = migrate($con, $params);
 // Output the result of the operation
 echo $result;
 <---------------------------------------------------------------- */
