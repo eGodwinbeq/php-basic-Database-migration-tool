@@ -1,5 +1,6 @@
 <?php
 // include you database connection file
+// include 'connect.php'; // Uncomment this line if you have a connect.php file for database connection
 
 // include 'connect.php';
 include 'build.php';
