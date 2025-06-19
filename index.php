@@ -34,7 +34,7 @@ include 'build.php';
     ## Call the function to alter the table
         $result = migrate($con, $params);
     
-        ##  Output the result of the operation
+    ##  Output the result of the operation
         echo $result;
 
 
